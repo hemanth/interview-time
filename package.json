@@ -1,0 +1,21 @@
+{
+  "name": "interview-time",
+  "version": "0.0.0",
+  "description": "Prepare for your technical interviews!",
+  "bin": {
+    "interview-time": "runner.js"
+  },
+  "author": "Hemanth.HM <hemanth.hm@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "nodeschool",
+    "adventure",
+    "education",
+    "interview",
+    "technical"
+  ],
+  "dependencies": {
+    "adventure": "^2.2.0",
+    "adventure-verify": "^2.1.1"
+  }
+}
