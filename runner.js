@@ -3,7 +3,7 @@
 var adventure = require('adventure');
 var interview = adventure('interview-time');
 
-var problems = [ 'palindrome'];
+var problems = ['fizzbuzz','palindrome'];
 problems.forEach(function (prob) {
   interview.add(prob, function () {
     return require('./problems/' + prob);
