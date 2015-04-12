@@ -2,6 +2,7 @@ var cwd = require('process').cwd(),
 readFile = require('fs').readFileSync,
 isFunction = require('util').isFunction,
 isEqual = function(a1, a2) {
+  if (!(a2 instanceof Array)) return false;
   return (a1.length == a2.length) && a1.every(function(element, index) {
     return element === a2[index];
   });
@@ -30,7 +31,7 @@ exports.verify = function (args, cb) {
         cb(true);
     }
     else {
-        console.log("Sorry your code does not work :(");
+        console.log("Sorry your code does not work :(", "\nExpected reuslt: ", expected);
         cb(false);
     }
 };

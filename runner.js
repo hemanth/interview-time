@@ -4,7 +4,7 @@ var adventure = require('adventure');
 var interview = adventure('interview-time');
 
 var problems = [
-  'fizz-buzz','palindrome', 'set-difference'
+  'fizz-buzz','palindrome', 'anagrams','set-difference'
 ];
 problems.forEach(function (prob) {
   interview.add(prob, function () {
