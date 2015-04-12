@@ -23,11 +23,11 @@ exports.problem = 'Check if a give string is a plaindrome.\n\n' +
 
 exports.verify = function (args, cb) {
     var proposed = require(cwd+'/'+args[0]),
-    expected = [];
+    expected = argv[4].split('').reverse().join('');
     if(!isFunction(proposed)) {
       console.log("Please make sure you have exported the function as suggested.");
     }
-    if (proposed()) {
+    if (proposed(argv[4]) === expected) {
         console.log('Good you have solved it!\n');
         cb(true);
     }

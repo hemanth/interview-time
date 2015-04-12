@@ -29,7 +29,7 @@ exports.verify = function (args, cb) {
         cb(true);
     }
     else {
-        console.log("Sorry your code does not work :(");
+        console.log("Sorry your code does not work :(","\nExpected reuslt: ", expected);
         cb(false);
     }
 };
