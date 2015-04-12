@@ -22,12 +22,12 @@ exports.problem = 'Check if a give string is a plaindrome.\n\n' +
 'P.S: process.argv[4] would be "mam" in this case.';
 
 exports.verify = function (args, cb) {
-    var proposed = require(cwd+'/'+args[0]),
-    expected = argv[4].split('').reverse().join('');
+    var proposed = require(cwd+'/'+args[0]);
+
     if(!isFunction(proposed)) {
       console.log("Please make sure you have exported the function as suggested.");
     }
-    if (proposed(argv[4]) === expected) {
+    if (proposed(argv[4])) {
         console.log('Good you have solved it!\n');
         cb(true);
     }
