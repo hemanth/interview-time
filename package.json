@@ -1,6 +1,6 @@
 {
   "name": "interview-time",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Prepare for your technical interviews!",
   "bin": {
     "interview-time": "runner.js"
