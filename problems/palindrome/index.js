@@ -9,17 +9,15 @@ var arrEql = function(a1,a2){
   });
 };
 // Will use ES6 teamplate strings later on.
-exports.problem = 'Check if a give string is a plaindrome.\n\n' +
+exports.problem = 'Check if a give string is a palindrome.\n\n' +
 
-'* Create a file `plaindrome.js`\n\n' +
+'* Create a file `palindrome.js`\n\n' +
 
-'* Which takes a string as a command line argument.\n\n' +
+'* Export a function which checks if a string is a palindrome.\n\n' +
 
-'* Don\'t forget to export you function. module.exports = function() {}`);\n\n'+
+'* Don\'t forget to export you function. \n\n\tmodule.exports = function isPalindrome(str) {\n\t\t/* your code */\t\n\t});\n\n'+
 
-'Finally to verify do a `interview-time verify plaindrome.js "mam"`\n\n' +
-
-'P.S: process.argv[4] would be "mam" in this case.';
+'Finally to verify do a `interview-time verify palindrome.js`\n\n';
 
 exports.verify = function (args, cb) {
     var proposed = require(cwd+'/'+args[0]);
@@ -27,7 +25,7 @@ exports.verify = function (args, cb) {
     if(!isFunction(proposed)) {
       console.log("Please make sure you have exported the function as suggested.");
     }
-    if (proposed(argv[4])) {
+    if (proposed('mam') === true && proposed('man') === false) {
         console.log('Good you have solved it!\n');
         cb(true);
     }
