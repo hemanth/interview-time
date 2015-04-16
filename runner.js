@@ -4,12 +4,13 @@ var adventure = require('adventure');
 var interview = adventure('interview-time');
 
 var problems = [
-  'fizz-buzz','palindrome', 'anagrams','set-difference'
+	'fizz-buzz', 'palindrome', 'anagrams', 'set-difference',
+	'most-repeated-characters'
 ];
-problems.forEach(function (prob) {
-  interview.add(prob, function () {
-    return require('./problems/' + prob);
-  });
+problems.forEach(function(prob) {
+	interview.add(prob, function() {
+		return require('./problems/' + prob);
+	});
 });
 
 interview.execute(process.argv.slice(2));
