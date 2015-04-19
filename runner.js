@@ -3,7 +3,7 @@
 var adventure = require('adventure-runner'),
   problems = [
     'fizzbuzz', 'palindrome', 'anagrams', 'set-difference',
-    'most-repeated-characters'
+    'most-repeated-characters', 'uniq-elements'
   ];
 
 adventure('interview-time', problems);
