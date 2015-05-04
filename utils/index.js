@@ -14,7 +14,7 @@ module.exports = {
 			toCheck.cb(true);
 		} catch (e) {
 			console.log("Sorry your code does not work :(", "\nExpected reuslt:",
-				expected, "For the input:", toCheck.input);
+				toCheck.expected, "For the input:", toCheck.input);
 			toCheck.cb(false);
 		}
 	}
