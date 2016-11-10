@@ -15,7 +15,7 @@
     "technical"
   ],
   "dependencies": {
-    "adventure-runner": "^2.0.1",
+    "adventure-runner": "^2.0.2",
     "root-require": "^0.3.1"
   }
 }
