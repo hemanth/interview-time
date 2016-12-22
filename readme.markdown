@@ -16,6 +16,6 @@ __Run it:__
 $ interview-time
 ```
 
-For rest of commands do a `iterview-time --help`
+For rest of commands do a `interview-time --help`
 
 P.S: Loads of questions are on their way, feel free to send a PR ;)
